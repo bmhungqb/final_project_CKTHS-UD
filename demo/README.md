@@ -13,7 +13,7 @@
 ```bash
 export task=panoptic
 
-python demo.py --config-file ../configs/ade20k/swin/oneformer_swin_large_bs16_160k.yaml \
+python demo.py --config-file ../configs/ade20k/swin/oneformer_swin_large_bs16_90k.yaml \
   --input <path-to-images> \
   --output <output-path> \
   --task $task \

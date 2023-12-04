@@ -149,14 +149,14 @@ _PREDEFINED_SPLITS_BDD10K_PANOPTIC = {
         "datasets/bdd10k/labels/pan_seg/bitmasks/train",
         "datasets/bdd10k/labels/pan_seg/polygons/pan_seg_train.json",
         "datasets/bdd10k/labels/sem_seg/masks/train",
-        "bdd10k/bdd10k_instance_train.json",
+        "datasets/bdd10k/labels/ins_seg/polygons/ins_seg_train.json",
     ),
     "bdd10k_panoptic_val": (
         "datasets/bdd10k/images/val",
         "datasets/bdd10k/labels/pan_seg/bitmasks/val",
         "datasets/bdd10k/labels/pan_seg/polygons/pan_seg_val.json",
         "datasets/bdd10k/labels/sem_seg/masks/val",
-        "bdd10k/bdd10k_instance_val.json",
+        "datasets/bdd10k/labels/ins_seg/polygons/ins_seg_val.json",
     ),
 }
 

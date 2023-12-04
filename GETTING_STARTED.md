@@ -22,7 +22,7 @@ Please see [Getting Started with Detectron2](https://github.com/facebookresearch
 ```bash
 python train_net.py --dist-url 'tcp://127.0.0.1:50163' \
     --num-gpus 8 \
-    --config-file configs/ade20k/swin/oneformer_swin_large_bs16_160k.yaml \
+    --config-file configs/ade20k/swin/oneformer_swin_large_bs16_90k.yaml \
     OUTPUT_DIR outputs/ade20k_swin_large WANDB.NAME ade20k_swin_large
 ```
 
@@ -35,7 +35,7 @@ python train_net.py --dist-url 'tcp://127.0.0.1:50163' \
 ```bash
 python train_net.py --dist-url 'tcp://127.0.0.1:50164' \
     --num-gpus 8 \
-    --config-file configs/ade20k/swin/oneformer_swin_large_bs16_160k.yaml \
+    --config-file configs/ade20k/swin/oneformer_swin_large_bs16_90k.yaml \
     --eval-only MODEL.IS_TRAIN False MODEL.WEIGHTS <path-to-checkpoint> \
     MODEL.TEST.TASK <task>
 ```
