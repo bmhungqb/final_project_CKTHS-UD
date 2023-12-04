@@ -25,7 +25,7 @@ INPUT:
   CROP:
     ENABLED: True
     TYPE: "absolute"
-    SIZE: (640, 640)
+    SIZE: (640, 360)
     SINGLE_CATEGORY_MAX_AREA: 1.0
   COLOR_AUG_SSD: True
   SIZE_DIVISIBILITY: 640  # used in dataset mapper
