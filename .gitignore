@@ -54,4 +54,4 @@ _darcs
 # dataset
 /datasets/bdd10k
 /datasets/bdd10k.zip
-/detectron2
+./detectron2
