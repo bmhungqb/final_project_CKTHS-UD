@@ -52,14 +52,14 @@ class VisualizationDemo(object):
         # Convert image from OpenCV BGR format to Matplotlib RGB format.
         image = image[:, :, ::-1]
         vis_output = {}
-        
+
         if task == 'panoptic':
             visualizer = Visualizer(image, metadata=self.metadata, instance_mode=ColorMode.IMAGE)
             predictions = self.predictor(image, task)
             panoptic_seg, segments_info = predictions["panoptic_seg"]
             vis_output['panoptic_inference'] = visualizer.draw_panoptic_seg_predictions(
-            panoptic_seg.to(self.cpu_device), segments_info, alpha=0.7
-        )
+                panoptic_seg.to(self.cpu_device), segments_info, alpha=0.7
+            )
 
         if task == 'panoptic' or task == 'semantic':
             visualizer = Visualizer(image, metadata=self.metadata, instance_mode=ColorMode.IMAGE_BW)

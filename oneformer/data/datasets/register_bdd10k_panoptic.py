@@ -113,7 +113,7 @@ def get_metadata(BDD10K_CATEGORIES):
             stuff_dataset_id_to_contiguous_id[str(cat["id"])] = i
 
         # in order to use sem_seg evaluator
-    #         stuff_dataset_id_to_contiguous_id[str(cat["id"])] = i
+        #     stuff_dataset_id_to_contiguous_id[str(cat["id"])] = i
 
     meta["thing_dataset_id_to_contiguous_id"] = thing_dataset_id_to_contiguous_id
     meta["stuff_dataset_id_to_contiguous_id"] = stuff_dataset_id_to_contiguous_id
